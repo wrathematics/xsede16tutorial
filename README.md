@@ -10,4 +10,4 @@ TODO
 * Prerequisites [[pdf](todo) | [html](todo)]
 
 ## License
-See the [LICENSE](LICENSE.md) file distributed with this work.
+See the [COPYING.md](COPYING.md) file distributed with this work.
