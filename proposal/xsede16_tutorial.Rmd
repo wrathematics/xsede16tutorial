@@ -1,0 +1,89 @@
+---
+title: "R and Compiled Code"
+author: "Drew Schmidt"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    highlight: kate
+bibliography: tutorial.bib
+csl: "ieee.csl"
+---
+
+
+* **Presenter(s)**: Drew Schmidt, UTK
+* **Length**: Half day
+* **Skill Level**: Intermediate
+* **Software Requirements**: An ssh client (ssh, Putty), and/or R.
+* **Prerequisites**: Experience working with R (preferred) or experience programming in a high-level language.
+
+
+## Abstract
+The R language did not come from the supercomputing community.  And whether that is *because* of this or *in spite* of this, it is an exceedingly popular software package within the data science community.  In fact, by some measures, R is the most popular software package for the analysis of data [[@bobsoftpop]]. 
+
+
+This tutorial will focus on helping users to develop efficient R code. The presentations include how to profile R code and best practices in writing and compiling R code for efficiency.
+
+
+
+
+This half day tutorial, will introduce participants to debugging, profiling and performance analysis, optimization, foreign language API's, and parallel programming with R. There will also be a comprehensive hands-on component to reinforce topics introduced during the lecture portion. 
+
+
+## Intended Audience
+The XSEDE conference naturally segments into two groups of people:  practitioners, and service providers.  We believe that each could benefit significantly from this material.  For the practitioners, the tutorial will introduce them to integrating compiled code into their existing R pipelines.  This will enable these researchers to   We will list numerous references, best practices, and offer many examples and exercises.  For people in this group, the material is likely new and largely unknown
+
+On the other hand, service providers are likely already familiar with the development of compiled code.  However, bringing it into R is another story.  
+Attendees in this group will likely find the material valuable, but more of a beginner level.
+
+intermediate for practitioner, beginner for service provider
+sp's: better able to support clients
+pt's: write better software
+
+The proposed tutorial is ideal for 
+The attendee should ideally have some familiarity with working with R.  Service providers looking for information to better support R users need not have direct experience with R, provided they have a strong programming background, and some familiarity with a high-level language such as Python or Matlab.  The content is appropriate for any students, researchers, or staff who are working with R and interested in performance. 
+
+
+
+## Tutorial Outline
+The tutorial is divided into 4 segments.  The general structure of the tutorial will be:
+
+
+1. [60 min] Introduction
+    1. Set up on Comet.
+    2. Why compiled code? Why R?
+    3. A quick cost/benefit analysis.
+    4. 
+2. [30 min] Using compiled code with R.
+    1. The basic interfaces: .C, .Fortran, .Call
+    2. The C interface.
+    3. Quick note about Fortran.
+3. [30 min] Break
+4. [90 min] Rcpp.
+    1. 
+    2. 
+    3. Paralleism via RcppParallel and OpenMP
+5. [30 min] Advanced topics as time/attendee interest permits.
+    1. Connecting gdb to R.
+    2. Finding errors with valgrind and scan-build.
+    3. External libraries
+    4. CRAN specific issues.
+
+
+
+
+## Software Requirements and Hands-on Activities
+need a laptop
+Attendees will need an ssh client, such as PuTTY for Windows or the system ssh client on Mac and Linux.  
+
+Discuss contingency plans if internet goes down
+
+external document
+
+Materials will be delivered to attendees at least one week in advance, as well as hosted openly on GitHub.
+
+
+materials disseminated on github
+
+
+# References
+

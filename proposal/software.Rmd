@@ -1,0 +1,73 @@
+---
+title: "Software Requirements"
+author: "Drew Schmidt"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    highlight: kate
+---
+
+
+# Software Requirements
+
+We will be using [Comet](http://www.sdsc.edu/support/user_guides/comet.html) for the exercises.  To connect to it you will need to 
+
+## Windows
+Download and open the ssh client [PuTTY](http://www.putty.org/)
+
+## Mac and Linux
+You should use your system ssh client, accessible from the terminal.  Mac users can open a terminal in Finder, under the utilities section (called `Terminal.app`).
+
+
+
+
+
+# Connecting to Comet
+
+## Windows
+Open PuTTY. In the configuration window, under "Session", enter:
+
+* **Host Name (or IP address):** `my_netid@login.newton.utk.edu` (replace `my_netid` with your UTK netid)
+* **Port:** 22
+* **Connection type:** SSH
+
+
+## Mac and Linux
+Open a terminal, and enter:
+
+```
+ssh my_netid@login.newton.utk.edu
+```
+
+Where `my_netid` is your UTK netid.  You will then be asked for a password; enter your UTK netid password.  You should now be logged in.
+
+
+
+
+
+# Backup Plan
+
+In the event that Comet is inaccessible during the tuorial (internet goes down, account/scheduling issues, the machines is purchased by private a party and repurposed to mine bitcoins, etc), you may wish to come to the tutorial with your laptop set up to run examples locally.
+
+At a minimum, you will need to have:
+
+* [R](http://cran.r-project.org)
+* Several packages (Rcpp, rbenchmark, and microbenchmark; more information below)
+* The ability to build packages from source:
+    * [Windows] [Install Rtools](http://cran.r-project.org/bin/windows/Rtools/).
+    * [Mac]:
+        * [Install XCode](http://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the Mac App Store.  
+        * Open XCode and choose "Preferences", "Downloads", then "Install Command Line Tools".
+    * [Linux] Compilers. For example, on Debian/Ubuntu, you would want `build-essential` at a minimum.
+
+
+## Packages
+To install an R package from the main repository CRAN, you issue the command `install.packages('name_of_package')` from R.  So for this workshop, you would run:
+
+```r
+install.packages("Rcpp")
+install.packages("rbenchmark")
+install.packages("microbenchmark")
+```
+
+You should only need to run each of those commands once.
